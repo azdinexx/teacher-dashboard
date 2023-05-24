@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="profile.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Modal with DIALOG element-->
+    <dialog id="Dialog">
+      <form>
+        <h4>Are you sure</h4>
+        <div class="buttons">
+          <button value="cancel" formmethod="dialog">Cancel</button>
+          <button id="confirmBtn" value="default">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="InfoDialog">
+      <form>
+        <h2>info</h2>
+
+        <div class="info_innerContainer">
+          <h4>Fullname</h4>
+          <p>Azzdine Bouali</p>
+          <h4>Email</h4>
+          <p>Azzdine Bouali</p>
+          <h4>Telephone</h4>
+          <p>Azzdine Bouali</p>
+          <h4>Country</h4>
+          <p>Azzdine Bouali</p>
+          <h4>City</h4>
+          <p>Azzdine Bouali</p>
+          <h4>Status</h4>
+          <p>Azzdine Bouali</p>
+        </div>
+        <div class="buttons">
+          <button id="" value="default">close</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Modal with DIALOG element-->
+
+    <div class="container">
+      <aside>
+        <div class="logo">
+          <h1>EDUCATION &copy;</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="./MyCourses.html"> My Courses </a>
+          </li>
+        </ul>
+        <div id="Adminprofile">
+          <a href="./profile.html">
+            <span class="material-symbols-outlined"> manage_accounts </span>
+            <span> My Profile Setting </span></a
+          >
+        </div>
+      </aside>
+      <main>
+        <div id="AdminSettings">
+          <h1>Admin Settings</h1>
+          <div class="pictureWrapper">
+            <div class="modify-btn">
+              <span>Edit</span>
+              <span class="material-symbols-outlined"> edit </span>
+            </div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFT3AXEFfwv9cp_GD59g5Id3Xpt8RU8_t9Xw&usqp=CAU"
+              alt=""
+            />
+            <div>
+              <span class="name">Ahmed Gosling</span>
+              <span class="jobTitle">Admin</span>
+              <small><a href="">Change Profile Picture</a></small>
+            </div>
+          </div>
+          <div class="personalInformation">
+            <div class="modify-btn">
+              <span>Edit</span>
+              <span class="material-symbols-outlined"> edit </span>
+            </div>
+            <div class="personalInformation_info">
+              <span>FIRST NAME</span>
+              <p>Azzdine</p>
+            </div>
+            <div class="personalInformation_info">
+              <span>LAST NAME</span>
+              <p>Bouali</p>
+            </div>
+            <div class="personalInformation_info">
+              <span>EMAIL</span>
+              <p>Azzdinebouali2002@gmail.com</p>
+            </div>
+            <div class="personalInformation_info">
+              <span>TELEPHONE</span>
+              <p>+212 625878499</p>
+            </div>
+          </div>
+          <div class="password_section">
+            <label for="old_password">OLD PASSWORD</label>
+            <input type="password" placeholder="old password .." />
+            <label for="old_password">NEW PASSWORD</label>
+            <input type="password" placeholder="new password.." />
+            <label for="old_password">CONFIRM YOUR PASSWORD</label>
+            <input type="password" placeholder="confirm your new pwd.." />
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
